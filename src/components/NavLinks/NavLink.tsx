@@ -1,13 +1,17 @@
 import type { ReactNode } from "react";
 
 interface NavLinkProps {
+  navigateTo: string;
   children: ReactNode;
+  onHandleLink: () => void;
 }
 
-function NavLink({ children }: NavLinkProps) {
+function NavLink({ children, navigateTo, onHandleLink }: NavLinkProps) {
   return (
     <li>
-      <a href="#">{children}</a>
+      <a onClick={onHandleLink} href={navigateTo}>
+        {children}
+      </a>
     </li>
   );
 }

@@ -8,9 +8,11 @@ import { useState } from "react";
 function Navbar() {
   const [isOpenHamburger, setIsOpenHamburger] = useState(false);
   function toggleHamburgerMenu() {
-    console.log("hio");
-
     setIsOpenHamburger((prev) => !prev);
+  }
+
+  function handleLink() {
+    setIsOpenHamburger(false);
   }
   return (
     <div className={styles.nav}>
@@ -18,9 +20,18 @@ function Navbar() {
         <img src={logo} alt="mohit's logo" />
       </div>
       <ul className={styles.navlinks}>
-        <NavLink>Home</NavLink>
-        <NavLink>About</NavLink>
-        <NavLink>Work</NavLink>
+        <NavLink onHandleLink={handleLink} navigateTo="#home">
+          Home
+        </NavLink>
+        <NavLink onHandleLink={handleLink} navigateTo="#experience">
+          Experience
+        </NavLink>
+        <NavLink onHandleLink={handleLink} navigateTo="#projects">
+          Projects
+        </NavLink>
+        <NavLink onHandleLink={handleLink} navigateTo="#contact">
+          Contact Me
+        </NavLink>
       </ul>
       <button onClick={toggleHamburgerMenu} className={styles.hamburgerIcon}>
         <img src={hamburgerMenu} alt="more" />
@@ -31,9 +42,18 @@ function Navbar() {
             <li onClick={toggleHamburgerMenu} className={styles.closeImg}>
               <img src={closeBtn} alt="close the menu" />
             </li>
-            <NavLink>Home</NavLink>
-            <NavLink>About</NavLink>
-            <NavLink>Work</NavLink>
+            <NavLink onHandleLink={handleLink} navigateTo="#home">
+              Home
+            </NavLink>
+            <NavLink onHandleLink={handleLink} navigateTo="#experience">
+              Experience
+            </NavLink>
+            <NavLink onHandleLink={handleLink} navigateTo="#projects">
+              Projects
+            </NavLink>
+            <NavLink onHandleLink={handleLink} navigateTo="#contact">
+              Contact Me
+            </NavLink>
           </ul>
         </div>
       )}

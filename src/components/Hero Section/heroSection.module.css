@@ -1,3 +1,7 @@
+.homeWrapper {
+  padding-top: 20px;
+}
+
 .intro {
   display: flex;
   align-items: center;
