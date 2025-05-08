@@ -23,6 +23,9 @@ function Navbar() {
         <NavLink onHandleLink={handleLink} navigateTo="#home">
           Home
         </NavLink>
+        <NavLink onHandleLink={handleLink} navigateTo="#skill">
+          Skills
+        </NavLink>
         <NavLink onHandleLink={handleLink} navigateTo="#experience">
           Experience
         </NavLink>

@@ -124,7 +124,11 @@
   }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 1024px) {
+  *::-webkit-scrollbar {
+    width: 0;
+  }
+
   .nav {
     justify-content: space-between;
     padding: var(--padding-gap);
