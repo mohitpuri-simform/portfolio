@@ -1,4 +1,3 @@
-/* Base styles (unchanged) */
 .intro {
   display: flex;
   align-items: center;
@@ -181,7 +180,6 @@
   width: 500px;
 }
 
-/* Responsive Breakpoints */
 @media (max-width: 1024px) {
   .intro {
     margin: 0 5rem;
@@ -218,7 +216,6 @@
 
   .description {
     width: 100%;
-    /* max-width: 400px; */
   }
 
   .imageWrapper {
