@@ -1,3 +1,4 @@
+import ProjectLink from "./ProjectLink";
 import styles from "./projectShowcase.module.css";
 export interface Project {
   id: string;
@@ -32,24 +33,18 @@ const ProjectShowcase = ({ projects }: ProjectShowcaseProps) => {
 
             <div className={styles.links}>
               {project.liveUrl && (
-                <a
-                  href={project.liveUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`${styles.link} ${styles.primaryLink}`}
-                >
-                  Live Demo
-                </a>
+                <ProjectLink
+                  url={project.liveUrl}
+                  className={styles.primaryLink}
+                  title="Live Demo"
+                />
               )}
               {project.codeUrl && (
-                <a
-                  href={project.codeUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`${styles.link} ${styles.secondaryLink}`}
-                >
-                  View Code
-                </a>
+                <ProjectLink
+                  url={project.codeUrl}
+                  className={styles.secondaryLink}
+                  title="View Code"
+                />
               )}
             </div>
           </div>
