@@ -1,0 +1,287 @@
+.intro {
+  display: flex;
+  align-items: center;
+  margin: 0 10rem;
+
+  padding: 5rem 0;
+  position: relative;
+  gap: 10px;
+}
+
+.heroSection {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.designation {
+  font-size: 1rem;
+  text-decoration: underline;
+}
+
+.developerQuote {
+  font-size: 42px;
+}
+
+.highlightContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.ovalHighlight {
+  position: relative;
+  z-index: 1;
+
+  color: #7127ba;
+}
+
+.ovalHighlight::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 110%;
+  height: 140%;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  transform: translate(-50%, -50%) rotate(-5deg);
+  z-index: -1;
+  border: 1px solid white;
+}
+
+.developerQuoteReason {
+  margin-top: 20px;
+}
+
+.imageContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.glowEffect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    circle at center,
+    rgba(191, 0, 255, 0.6) 0%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  z-index: -1;
+  filter: blur(20px);
+  transform: scale(1.1);
+}
+
+.imageContainer img {
+  position: relative;
+  z-index: 1;
+}
+
+.nameHeading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.hello {
+  font-size: 1.8rem;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.name {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #3a86ff;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.imageWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.floatingLabel {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+  z-index: 2;
+}
+
+.labelText {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.labelName {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #333;
+  margin-left: 5px;
+}
+
+.arrow {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid white;
+}
+
+.heroImage {
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+.companyLogo {
+  width: 20px;
+  margin: 0 5px;
+}
+
+.companyLink {
+  color: #ef5366;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem 15rem;
+  gap: 10px;
+}
+
+.company {
+  display: flex;
+  align-items: center;
+}
+
+.description {
+  width: 500px;
+}
+
+@media (max-width: 1024px) {
+  .intro {
+    margin: 0 5rem;
+    padding: 3rem 0;
+  }
+
+  .developerQuote {
+    font-size: 36px;
+  }
+
+  .about {
+    margin: 2rem 6rem;
+  }
+  .description {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .intro {
+    flex-direction: column;
+    margin: 0 3rem;
+    padding: 2rem 0;
+    text-align: center;
+  }
+
+  .developerQuote {
+    font-size: 32px;
+  }
+
+  .about {
+    margin: 0 3rem;
+  }
+
+  .description {
+    width: 100%;
+  }
+
+  .imageWrapper {
+    margin-bottom: 2rem;
+  }
+
+  .content {
+    margin-top: 0;
+  }
+
+  .floatingLabel {
+    top: -25px;
+    padding: 4px 12px;
+  }
+}
+
+@media (max-width: 425px) {
+  .intro {
+    margin: 5rem 1.5rem;
+    padding: 1.5rem 0;
+    gap: 5px;
+  }
+
+  .developerQuote {
+    font-size: 24px;
+  }
+
+  .nameHeading {
+    font-size: 1.8rem;
+  }
+
+  .hello {
+    font-size: 1.4rem;
+  }
+
+  .name {
+    font-size: 1.8rem;
+  }
+
+  .about {
+    margin: 0 1.5rem;
+    align-items: normal;
+    text-align: left;
+  }
+
+  .floatingLabel {
+    top: -20px;
+    padding: 3px 10px;
+    font-size: 0.7rem;
+  }
+
+  .labelName {
+    font-size: 0.8rem;
+  }
+
+  .ovalHighlight::before {
+    width: 105%;
+    height: 130%;
+  }
+
+  .designation {
+    font-size: 0.9rem;
+  }
+
+  .developerQuoteReason {
+    font-size: 0.9rem;
+    margin-top: 15px;
+  }
+}

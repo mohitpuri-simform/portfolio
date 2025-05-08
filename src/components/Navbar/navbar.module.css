@@ -28,7 +28,7 @@
 }
 
 .openHamburgerWrapper {
-  position: absolute;
+  position: fixed;
   z-index: 111;
   top: 0;
   left: 0;
