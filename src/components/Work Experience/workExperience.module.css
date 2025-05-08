@@ -1,0 +1,142 @@
+.workExperience {
+  max-width: 1200px;
+  margin: 10rem auto;
+  padding: 2rem 1rem;
+}
+
+.title {
+  margin-bottom: 2rem;
+
+  font-size: 2rem;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 2px;
+  background: #3498db;
+}
+
+.timelineItem {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.timelineDot {
+  position: absolute;
+  left: -1.5rem;
+  top: 0;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: #3498db;
+  transform: translateX(-50%);
+}
+
+.timelineContent {
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  background: linear-gradient(135deg, #130328 0%, #190831 50%, #190634 100%);
+}
+
+.timelineContent:hover {
+  transform: translateY(-5px);
+}
+
+.timelineHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.position {
+  margin: 0;
+ 
+  font-size: 1.25rem;
+}
+
+.duration {
+  
+  font-size: 0.9rem;
+}
+
+.company {
+  margin: 0 0 1rem 0;
+  color: #3498db;
+  font-size: 1.1rem;
+}
+
+.responsibilities {
+  padding-left: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.responsibilities li {
+  margin-bottom: 0.3rem;
+  color: #bdcad6;
+}
+
+.technologies {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+ 
+}
+
+.technologies span {
+  font-weight: bold;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .timelineHeader {
+    flex-direction: column;
+  }
+
+  .duration {
+    margin-top: 0.3rem;
+  }
+
+  .timelineContent {
+    padding: 1rem;
+  }
+
+  .position {
+    font-size: 1.1rem;
+  }
+
+  .company {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .workExperience {
+    padding: 1rem 0.5rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .timeline::before {
+    left: 0.5rem;
+  }
+
+  .timelineDot {
+    left: -1.5rem;
+  }
+
+  .timeline {
+    padding-left: 2rem;
+  }
+}
