@@ -19,7 +19,7 @@ function ContactLinks({
       aria-label={ariaLabel}
       className={className}
     >
-      <img src={imgURL} alt="instagram" />
+      <img src={imgURL} alt={ariaLabel} />
     </a>
   );
 }
