@@ -61,12 +61,11 @@
 
 .position {
   margin: 0;
- 
+
   font-size: 1.25rem;
 }
 
 .duration {
-  
   font-size: 0.9rem;
 }
 
@@ -89,7 +88,6 @@
 .technologies {
   margin-top: 0.5rem;
   font-size: 0.9rem;
- 
 }
 
 .technologies span {
