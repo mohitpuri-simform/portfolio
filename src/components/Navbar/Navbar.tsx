@@ -28,9 +28,9 @@ function Navbar() {
       {isOpenHamburger && (
         <div className={styles.openHamburgerWrapper}>
           <ul className={styles.openHamburger}>
-            <button onClick={toggleHamburgerMenu} className={styles.closeImg}>
+            <li onClick={toggleHamburgerMenu} className={styles.closeImg}>
               <img src={closeBtn} alt="close the menu" />
-            </button>
+            </li>
             <NavLink>Home</NavLink>
             <NavLink>About</NavLink>
             <NavLink>Work</NavLink>
