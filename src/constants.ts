@@ -8,7 +8,7 @@ export const experiences = [
     position: "React Developer Intern",
     company: "Simform Solutions",
     location: "Ahmedabad, India",
-    duration: "Jan 2020 - Present",
+    duration: "Jan 2024 - Present",
     responsibilities: [
       "Developed interactive UI components using React.js, enhancing user experience across multiple application features",
       "Participated in code reviews and adopted best practices for clean, maintainable code",
