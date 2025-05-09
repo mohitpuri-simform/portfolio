@@ -24,7 +24,7 @@ function Navbar() {
           alt="mohit's logo"
         />
       </a>
-      <ul className={styles.navlinks}>
+      <ul className={styles.navlinks} role="menu">
         <NavLink onHandleLink={handleLink} navigateTo="#home">
           Home
         </NavLink>
@@ -46,7 +46,7 @@ function Navbar() {
       </button>
       {isOpenHamburger && (
         <div className={styles.openHamburgerWrapper}>
-          <ul className={styles.openHamburger}>
+          <ul className={styles.openHamburger} role="menu">
             <li onClick={toggleHamburgerMenu} className={styles.closeImg}>
               <img src={closeBtn} alt="close the menu" />
             </li>
