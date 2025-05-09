@@ -11,6 +11,10 @@
   padding: 20px;
 }
 
+.showcaseTitle {
+  font-size: 35px;
+}
+
 .project {
   display: flex;
   flex-direction: column-reverse;

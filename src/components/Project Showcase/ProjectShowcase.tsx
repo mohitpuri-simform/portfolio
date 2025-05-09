@@ -17,7 +17,7 @@ const ProjectShowcase = ({ projects }: ProjectShowcaseProps) => {
   return (
     <div id="projects" className={styles.projectWrapper}>
       <div className={styles.showcase}>
-        <h1>Projects</h1>
+        <h2 className={styles.showcaseTitle}>Projects</h2>
         {projects.map((project) => (
           <div key={project.id} className={styles.project}>
             <div className={styles.content}>

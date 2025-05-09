@@ -8,8 +8,9 @@
 .skillsMainWrapper {
   padding-top: 30px;
 }
-.skillsMainWrapper h1 {
+.skillsMainWrapper h2 {
   padding-left: 20px;
+  font-size: 35px;
 }
 
 .skillContainer {

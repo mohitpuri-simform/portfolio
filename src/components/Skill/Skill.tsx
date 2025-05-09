@@ -38,7 +38,7 @@ function Skill() {
   return (
     <div id="skill" className={styles.skillsMainWrapper}>
       <div className={styles.skillsWrapper}>
-        <h1>Tech Stack</h1>
+        <h2>Tech Stack</h2>
         <div className={styles.skillContainer}>
           {skills.map((skill) => (
             <div key={skill.alt} className={styles.skill}>
