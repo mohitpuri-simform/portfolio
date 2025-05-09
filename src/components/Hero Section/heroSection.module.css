@@ -24,7 +24,7 @@
 }
 
 .developerQuote {
-  font-size: 42px;
+  font-size: 40px;
 }
 
 .highlightContainer {
@@ -35,7 +35,7 @@
 .ovalHighlight {
   position: relative;
   z-index: 1;
-
+  font-size: 35px;
   color: #7127ba;
 }
 

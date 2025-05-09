@@ -22,13 +22,13 @@ function HeroSection() {
           </div>
           <div className={styles.content}>
             <p className={styles.designation}>A FrontEnd Developer who</p>
-            <p className={styles.developerQuote}>Builds interfaces</p>
-            <p className={styles.developerQuote}>
+            <h2 className={styles.developerQuote}>Builds interfaces</h2>
+            <h2 className={styles.developerQuote}>
               with pixel{" "}
-              <span className={styles.highlightContainer}>
-                <span className={styles.ovalHighlight}>perfection...</span>
-              </span>
-            </p>
+              <h2 className={styles.highlightContainer}>
+                <h2 className={styles.ovalHighlight}>perfection...</h2>
+              </h2>
+            </h2>
             <p className={styles.developerQuoteReason}>
               Because the details make the difference between good and great.
             </p>
