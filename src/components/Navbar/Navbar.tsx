@@ -16,9 +16,14 @@ function Navbar() {
   }
   return (
     <div className={styles.nav}>
-      <div className={styles.logo}>
-        <img src={logo} alt="mohit's logo" />
-      </div>
+      <a href="#home" className={styles.logo}>
+        <img
+          role="button"
+          aria-label="mohit's logo"
+          src={logo}
+          alt="mohit's logo"
+        />
+      </a>
       <ul className={styles.navlinks}>
         <NavLink onHandleLink={handleLink} navigateTo="#home">
           Home
