@@ -29,7 +29,7 @@ export const experiences = [
     position: "Full Stack Developer Intern",
     company: "Sabeena Digital Media Agency.",
     location: "Remote",
-    duration: "May 2024 - July 2024",
+    duration: "May 2024 - July 2025",
     responsibilities: [
       "Lead the development of responsive web applications using React",
       "Worked closely with a talented team on various projects.",
