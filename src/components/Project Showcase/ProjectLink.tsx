@@ -12,6 +12,7 @@ function ProjectLink({ className, title, url }: ProjectLinkProps) {
       target="_blank"
       rel="noopener noreferrer"
       className={`${styles.link} ${className}`}
+      aria-label={title + "opens in a new tab"}
     >
       {title}
     </a>

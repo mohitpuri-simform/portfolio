@@ -1,3 +1,7 @@
+.projectWrapper {
+  padding-top: 30px;
+}
+
 .showcase {
   display: flex;
   flex-direction: column;
@@ -5,6 +9,10 @@
   margin: 10rem auto;
   max-width: 1600px;
   padding: 20px;
+}
+
+.showcaseTitle {
+  font-size: 35px;
 }
 
 .project {
@@ -122,4 +130,3 @@
     min-height: 300px;
   }
 }
-
