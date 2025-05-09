@@ -40,8 +40,8 @@ function Skill() {
       <div className={styles.skillsWrapper}>
         <h1>Tech Stack</h1>
         <div className={styles.skillContainer}>
-          {skills.map((skill, index) => (
-            <div key={index} className={styles.skill}>
+          {skills.map((skill) => (
+            <div key={skill.alt} className={styles.skill}>
               <img
                 src={skill.src}
                 alt={skill.alt}
